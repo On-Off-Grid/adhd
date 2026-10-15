@@ -1,4 +1,5 @@
 import { core } from "./packs/core.js";
+import { security } from "./packs/security.js";
 
 // Frames push the generator into corners it wouldn't naturally go.
 // Each frame is a strategy for re-asking the same engineering problem
@@ -17,7 +18,7 @@ export type Frame = {
 
 // Packs are looked up by name at selection time, so a pack added to this
 // object is selectable without touching selectFrames.
-export const PACKS: Record<string, Frame[]> = { core };
+export const PACKS: Record<string, Frame[]> = { core, security };
 
 export const FRAMES: Frame[] = core;
 
